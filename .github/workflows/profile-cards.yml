@@ -10,11 +10,11 @@ on:
   schedule:
     - cron: "0 0 * * *" # mỗi ngày một lần (7h sáng giờ VN)
   workflow_dispatch:
+  # Push bất kỳ thay đổi nào lên main là vẽ lại thẻ (không lọc paths nữa).
+  # Commit do chính workflow này push bằng GITHUB_TOKEN sẽ KHÔNG kích hoạt lại workflow,
+  # nên không có vòng lặp vô hạn.
   push:
     branches: [main]
-    paths:
-      - scripts/cards.mjs
-      - .github/workflows/profile-cards.yml
 
 permissions:
   contents: write

@@ -1,5 +1,9 @@
-# Vẽ thẻ Stats và Top ngôn ngữ bằng scripts/cards.mjs, không dùng action hay server của bên thứ ba.
-# Ảnh được commit vào thư mục profile-cards/ trên nhánh main (chỉ commit khi số liệu thay đổi).
+# Vẽ thẻ Stats + Top ngôn ngữ bằng scripts/cards.mjs (dữ liệu từ GitHub API của chính repo này),
+# rồi commit vào profile-cards/ trên nhánh main (chỉ commit khi số liệu thay đổi).
+#
+# Workflow này KHÔNG dùng `uses:` nào: không actions/checkout, không actions/setup-node,
+# không action của bên thứ ba. Chỉ dùng git + node có sẵn trên runner ubuntu-latest của GitHub,
+# nên không phụ thuộc vào repo của bất kỳ ai khác.
 name: Profile cards
 
 on:
@@ -15,29 +19,42 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: profile-cards
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Draw cards
-        run: node scripts/cards.mjs profile-cards
+      - name: Draw cards and push if changed
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_USER: ${{ github.repository_owner }}
           # HIDE_LANGS: "HTML,CSS" # bỏ comment nếu muốn ẩn vài ngôn ngữ
-
-      - name: Commit if changed
         run: |
+          set -euo pipefail
+
+          echo "node $(node --version), git $(git --version)"
+
+          # Tự clone thay cho actions/checkout. Token đưa vào header (không nhét vào URL).
+          auth="$(printf 'x-access-token:%s' "$GITHUB_TOKEN" | base64 -w0)"
+          git -c "http.https://github.com/.extraheader=AUTHORIZATION: basic $auth" \
+            clone --depth 1 "https://github.com/${GITHUB_REPOSITORY}.git" repo
+
+          cd repo
+          git config --local http.https://github.com/.extraheader "AUTHORIZATION: basic $auth"
+
+          node scripts/cards.mjs profile-cards
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add profile-cards
-          git diff --cached --quiet || (git commit -m "chore: update profile cards" && git push)
+
+          if git diff --cached --quiet; then
+            echo "Số liệu không đổi, không commit."
+          else
+            git commit -m "chore: update profile cards"
+            git push
+          fi

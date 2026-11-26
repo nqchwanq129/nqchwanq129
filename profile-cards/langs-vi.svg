@@ -9,7 +9,6 @@
   </defs>
   <g clip-path="url(#card)">
     <rect width="400" height="200" fill="url(#bg)"/>
-    <rect width="5" height="200" fill="#C08552"/>
   </g>
   <rect x="0.75" y="0.75" width="398.5" height="198.5" rx="13.25" fill="none" stroke="#6F4E37" stroke-width="1.5"/>
   <g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">

@@ -16,7 +16,7 @@ const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&l
 const W = 400, H = 200;
 const SANS = "'Segoe UI', 'Helvetica Neue', Arial, sans-serif";
 const C = {
-  bgA: '#2E1E14', bgB: '#1C120B', border: '#6F4E37', stripe: '#C08552',
+  bgA: '#2E1E14', bgB: '#1C120B', border: '#6F4E37',
   text: '#F5E6D3', sub: '#D7B899', muted: '#9C7A5E', accent: '#E6A15C',
   track: '#4B2E1E', ring: '#C08552',
 };
@@ -150,7 +150,6 @@ function card(title, body, aria) {
   </defs>
   <g clip-path="url(#card)">
     <rect width="${W}" height="${H}" fill="url(#bg)"/>
-    <rect width="5" height="${H}" fill="${C.stripe}"/>
   </g>
   <rect x="0.75" y="0.75" width="${W - 1.5}" height="${H - 1.5}" rx="13.25" fill="none" stroke="${C.border}" stroke-width="1.5"/>
   <g font-family="${SANS}">

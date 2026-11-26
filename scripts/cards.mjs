@@ -20,8 +20,9 @@ const C = {
   text: '#F5E6D3', sub: '#D7B899', muted: '#9C7A5E', accent: '#E6A15C',
   track: '#4B2E1E', ring: '#C08552',
 };
-// Coffee shades for languages, brightest first. The last one is used for "Other".
-const LANG_COLORS = ['#E6A15C', '#C08552', '#F0D3A8', '#A0703F', '#D98E73', '#8B5A3C', '#BFA58A', '#7D6450'];
+// Nhóm màu tương phản cao (xanh lá, lam, tím, vàng, đỏ, teal...) để dễ phân biệt trên nền tối.
+// Phần tử cuối dùng cho "Other".
+const LANG_COLORS = ['#F2C14E', '#57C785', '#4FA3E3', '#A78BFA', '#E8695E', '#3FC7C7', '#E6A15C', '#8C8378'];
 
 const T = {
   en: {

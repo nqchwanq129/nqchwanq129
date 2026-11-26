@@ -214,7 +214,7 @@ function langsCard(lang, d) {
     const label = pct < 0.1 ? '<0.1%' : `${pct.toFixed(1)}%`;
     body.push(`<circle cx="${lx + 5}" cy="${y - 5}" r="5" fill="${it.color}"/>`);
     body.push(`<text x="${lx + 18}" y="${y}" font-size="13" fill="${C.text}">${esc(it.name)}</text>`);
-    body.push(`<text x="${lx + 164}" y="${y}" text-anchor="end" font-size="12" fill="${C.muted}">${esc(label)}</text>`);
+    body.push(`<text x="${lx + 164}" y="${y}" text-anchor="end" font-size="12.5" font-weight="600" fill="${C.text}">${esc(label)}</text>`);
   });
   return card(t.langsTitle, body, t.langsTitle);
 }

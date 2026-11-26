@@ -6,3 +6,60 @@
   <img src="./profile-cards/stats-en.svg" width="49%" alt="GitHub Stats" />
   <img src="./profile-cards/langs-en.svg" width="49%" alt="Top Languages" />
 </p>
+
+## Tech stack
+
+<!-- Badge tải sẵn về assets/tech/ (nguồn: shields.io) nên README không gọi mạng ra ngoài khi hiển thị.
+     Logo đã được nhúng base64 bên trong từng file SVG. Muốn thêm badge: tải file mới vào assets/tech/ rồi thêm <img>. -->
+
+**Ngôn ngữ lập trình**
+
+<p>
+  <img src="./assets/tech/html5.svg" alt="HTML5" height="28" />
+  <img src="./assets/tech/css3.svg" alt="CSS3" height="28" />
+  <img src="./assets/tech/scss.svg" alt="SCSS" height="28" />
+  <img src="./assets/tech/typescript.svg" alt="TypeScript" height="28" />
+  <img src="./assets/tech/python.svg" alt="Python" height="28" />
+  <img src="./assets/tech/csharp.svg" alt="C#" height="28" />
+</p>
+
+**Framework và Runtime**
+
+<p>
+  <img src="./assets/tech/nextjs.svg" alt="Next.js" height="28" />
+  <img src="./assets/tech/nestjs.svg" alt="NestJS" height="28" />
+  <img src="./assets/tech/reactjs.svg" alt="React.js" height="28" />
+  <img src="./assets/tech/nodejs.svg" alt="Node.js" height="28" />
+</p>
+
+**Cơ sở dữ liệu**
+
+<p>
+  <img src="./assets/tech/mysql.svg" alt="MySQL" height="28" />
+  <img src="./assets/tech/sqlserver.svg" alt="SQL Server" height="28" />
+</p>
+
+**Hệ điều hành**
+
+<p>
+  <img src="./assets/tech/ubuntu.svg" alt="Ubuntu" height="28" />
+  <img src="./assets/tech/linux.svg" alt="Linux" height="28" />
+  <img src="./assets/tech/windowsserver.svg" alt="Windows Server" height="28" />
+</p>
+
+**Hạ tầng và máy chủ**
+
+<p>
+  <img src="./assets/tech/vmware.svg" alt="VMware" height="28" />
+  <img src="./assets/tech/nginx.svg" alt="NGINX" height="28" />
+  <img src="./assets/tech/iis.svg" alt="IIS" height="28" />
+  <img src="./assets/tech/veeam.svg" alt="Veeam" height="28" />
+</p>
+
+**Công cụ phát triển**
+
+<p>
+  <img src="./assets/tech/vscode.svg" alt="VS Code" height="28" />
+  <img src="./assets/tech/git.svg" alt="Git" height="28" />
+  <img src="./assets/tech/github.svg" alt="GitHub" height="28" />
+</p>

@@ -1,0 +1,26 @@
+# Tạo thẻ Stats và Top ngôn ngữ ngay trong repo, không dùng server vercel.
+# Action tự commit các file SVG vào thư mục profile-summary-card-output/ trên nhánh main.
+name: Profile summary cards
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # mỗi ngày một lần (7h sáng giờ VN)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Generate summary cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          # Muốn đếm cả repo private thì tạo PAT, lưu vào secret SUMMARY_GITHUB_TOKEN rồi đổi dòng dưới.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          BRANCH_NAME: main
+          UTC_OFFSET: 7

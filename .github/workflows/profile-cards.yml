@@ -1,0 +1,43 @@
+# Vẽ thẻ Stats và Top ngôn ngữ bằng scripts/cards.mjs, không dùng action hay server của bên thứ ba.
+# Ảnh được commit vào thư mục profile-cards/ trên nhánh main (chỉ commit khi số liệu thay đổi).
+name: Profile cards
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # mỗi ngày một lần (7h sáng giờ VN)
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/cards.mjs
+      - .github/workflows/profile-cards.yml
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Draw cards
+        run: node scripts/cards.mjs profile-cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USER: ${{ github.repository_owner }}
+          # HIDE_LANGS: "HTML,CSS" # bỏ comment nếu muốn ẩn vài ngôn ngữ
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile-cards
+          git diff --cached --quiet || (git commit -m "chore: update profile cards" && git push)

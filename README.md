@@ -41,30 +41,10 @@
 
 ## Featured Projects
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/nqchwanq129/nqchwanq129">nqchwanq129</a></h3>
-      <p>My personal GitHub profile, featuring animated coffee illustrations and automatically updated activity graphs and statistics.</p>
-      <p>
-        <img src="assets/skill-icons/javascript.svg" width="32" height="32" title="JavaScript" alt="JavaScript" />
-        <img src="assets/skill-icons/github.svg" width="32" height="32" title="GitHub" alt="GitHub" />
-      </p>
-      <p><a href="https://github.com/nqchwanq129/nqchwanq129">Source Code ↗</a></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/nqchwanq129/web-orbcomm-location">ORBCOMM Location Tracking</a></h3>
-      <p>A web dashboard for tracking ORBCOMM device locations, exploring journey history, and sending commands to devices.</p>
-      <p>
-        <img src="assets/skill-icons/csharp.svg" width="32" height="32" title="C#" alt="C#" />
-        <img src="assets/skill-icons/dotnet.svg" width="32" height="32" title="ASP.NET Core 8" alt="ASP.NET Core 8" />
-        <img src="assets/skill-icons/javascript.svg" width="32" height="32" title="JavaScript" alt="JavaScript" />
-        <img src="assets/skill-icons/sqlserver.svg" width="32" height="32" title="SQL Server" alt="SQL Server" />
-      </p>
-      <p><a href="https://github.com/nqchwanq129/web-orbcomm-location">Source Code ↗</a></p>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <a href="https://github.com/nqchwanq129/nqchwanq129"><img src="assets/projects/profile.svg" width="49%" alt="nqchwanq129 ? a coffee-themed GitHub profile with custom illustrations and automated activity cards. View source code." /></a>
+  <a href="https://github.com/nqchwanq129/web-orbcomm-location"><img src="assets/projects/orbcomm.svg" width="49%" alt="ORBCOMM Location Tracking ? a map dashboard for device locations, journeys, and commands. View source code." /></a>
+</p>
 
 ## GitHub Stats
 

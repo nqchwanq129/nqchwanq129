@@ -10,6 +10,12 @@
 - 🐈 A cat lover who enjoys the little things in life.
 - 🌱 Always learning, experimenting, and enjoying the journey.
 
+## ☕ Coffee Corner
+
+<p align="center">
+  <img src="assets/coffee-corner.svg" width="100%" alt="Hoang's Coffee Corner — Espresso, Latte, and Cappuccino with animated steam" />
+</p>
+
 ## 🛠️ Tech Stack
 
 <p align="left">

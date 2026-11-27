@@ -4,15 +4,13 @@
 
 ## About Me
 
-<img align="right" src="assets/coffee-corner.svg" width="300" height="160" alt="Espresso, Latte, and Cappuccino with rising animated steam" />
+<img align="right" src="assets/coffee-corner.svg" width="300" height="127" alt="Espresso, Latte, and Cappuccino with rising animated steam" />
 
 - 👋 Hi, I'm Hoang, a curious human from Vietnam.
 - 💻 I enjoy exploring technology and building things for fun.
 - ☕ Powered by coffee, curiosity, and a little bit of code.
 - 🐈 A cat lover who enjoys the little things in life.
 - 🌱 Always learning, experimenting, and enjoying the journey.
-
-<br clear="right" />
 
 ## 🛠️ Tech Stack
 

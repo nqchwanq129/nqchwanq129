@@ -3,9 +3,13 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/nqchwanq129"><img src="assets/social/github.svg" width="132" height="38" alt="GitHub: nqchwanq129" /></a>
-  <a href="https://www.linkedin.com/in/lehoang129/"><img src="assets/social/linkedin.svg" width="132" height="38" alt="LinkedIn: Le Hoang" /></a>
-  <a href="https://leetcode.com/u/lenghoang129/"><img src="assets/social/leetcode.svg" width="132" height="38" alt="LeetCode: lenghoang129" /></a>
+  <img src="https://komarev.com/ghpvc/?username=nqchwanq129&amp;label=PROFILE+VIEWS&amp;color=0077b5&amp;style=for-the-badge&amp;abbreviated=true" height="28" alt="Profile views" />
+  <img src="assets/social/discord.svg" width="96" height="28" alt="Discord" />
+  <img src="assets/social/x.svg" width="42" height="28" alt="X" />
+  <a href="https://www.facebook.com/hoanggle.19/"><img src="assets/social/facebook.svg" width="104" height="28" alt="Facebook: hoanggle.19" /></a>
+  <a href="https://www.linkedin.com/in/lehoang129/"><img src="assets/social/linkedin.svg" width="100" height="28" alt="LinkedIn: Le Hoang" /></a>
+  <a href="https://github.com/nqchwanq129"><img src="assets/social/github.svg" width="86" height="28" alt="GitHub: nqchwanq129" /></a>
+  <img src="assets/social/instagram.svg" width="110" height="28" alt="Instagram" />
 </p>
 
 ### 👋 About Me

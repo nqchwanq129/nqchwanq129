@@ -4,23 +4,23 @@
   <text x="24" y="38" font-size="17" font-weight="700" fill="#58A6FF">Ngôn ngữ dùng nhiều nhất</text>
   <clipPath id="bar"><rect x="24" y="54" width="352" height="10" rx="5"/></clipPath>
   <g clip-path="url(#bar)"><rect x="24" y="54" width="352" height="10" fill="#21262D"/>
-  <rect x="24.00" y="54" width="141.77" height="10" fill="#F2C14E"/>
-  <rect x="165.77" y="54" width="103.18" height="10" fill="#57C785"/>
-  <rect x="268.95" y="54" width="68.89" height="10" fill="#4FA3E3"/>
-  <rect x="337.84" y="54" width="25.50" height="10" fill="#A78BFA"/>
-  <rect x="363.34" y="54" width="9.83" height="10" fill="#E8695E"/>
-  <rect x="373.17" y="54" width="2.52" height="10" fill="#3FC7C7"/>
+  <rect x="24.00" y="54" width="140.36" height="10" fill="#F2C14E"/>
+  <rect x="164.36" y="54" width="105.65" height="10" fill="#57C785"/>
+  <rect x="270.01" y="54" width="68.21" height="10" fill="#4FA3E3"/>
+  <rect x="338.22" y="54" width="25.25" height="10" fill="#A78BFA"/>
+  <rect x="363.47" y="54" width="9.73" height="10" fill="#E8695E"/>
+  <rect x="373.20" y="54" width="2.50" height="10" fill="#3FC7C7"/>
   <rect x="375.70" y="54" width="0.30" height="10" fill="#DB61A2"/>
   </g>
   <circle cx="29" cy="89" r="5" fill="#F2C14E"/>
   <text x="42" y="94" font-size="13" fill="#E6EDF3">TypeScript</text>
-  <text x="188" y="94" text-anchor="end" font-size="12.5" font-weight="600" fill="#E6EDF3">40.3%</text>
+  <text x="188" y="94" text-anchor="end" font-size="12.5" font-weight="600" fill="#E6EDF3">39.9%</text>
   <circle cx="29" cy="116" r="5" fill="#57C785"/>
   <text x="42" y="121" font-size="13" fill="#E6EDF3">JavaScript</text>
-  <text x="188" y="121" text-anchor="end" font-size="12.5" font-weight="600" fill="#E6EDF3">29.3%</text>
+  <text x="188" y="121" text-anchor="end" font-size="12.5" font-weight="600" fill="#E6EDF3">30.0%</text>
   <circle cx="29" cy="143" r="5" fill="#4FA3E3"/>
   <text x="42" y="148" font-size="13" fill="#E6EDF3">CSS</text>
-  <text x="188" y="148" text-anchor="end" font-size="12.5" font-weight="600" fill="#E6EDF3">19.6%</text>
+  <text x="188" y="148" text-anchor="end" font-size="12.5" font-weight="600" fill="#E6EDF3">19.4%</text>
   <circle cx="29" cy="170" r="5" fill="#A78BFA"/>
   <text x="42" y="175" font-size="13" fill="#E6EDF3">C#</text>
   <text x="188" y="175" text-anchor="end" font-size="12.5" font-weight="600" fill="#E6EDF3">7.2%</text>

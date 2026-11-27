@@ -18,7 +18,7 @@ const SANS = "'Segoe UI', 'Helvetica Neue', Arial, sans-serif";
 const C = {
   text: '#E6EDF3', sub: '#B1BAC4', muted: '#9198A1', accent: '#58A6FF',
   title: '#E9D7BB',
-  track: '#21262D', ring: '#58A6FF',
+  track: '#21262D', ring: '#E9D7BB',
 };
 // Nhóm màu tương phản cao (xanh lá, lam, tím, vàng, đỏ, teal...) để dễ phân biệt trên nền tối.
 // Phần tử cuối dùng cho "Other".

@@ -2,7 +2,7 @@
   <img src="Banner/Hoang%E2%80%99s%20Cozy%20Code%20Caf%C3%A9.png" width="100%" alt="Hoang’s Cozy Code Café — coding, coffee, and cats" />
 </p>
 
-## About Me
+### 👋 About Me
 
 <img align="right" src="assets/coffee-corner.svg" width="300" height="127" alt="Espresso, Latte, and Cappuccino with rising animated steam" />
 
@@ -12,7 +12,7 @@
 - 🐈 A cat lover who enjoys the little things in life.
 - 🌱 Always learning, experimenting, and enjoying the journey.
 
-## 🛠️ Tech Stack
+### 🛠️ Tech Stack
 
 <p align="left">
   <img src="assets/skill-icons/html5.svg" width="48" height="48" title="HTML5" alt="HTML5" />
@@ -39,14 +39,14 @@
   <img src="assets/skill-icons/github.svg" width="48" height="48" title="GitHub" alt="GitHub" />
 </p>
 
-## Featured Projects
+### 🚀 Featured Projects
 
 <p align="center">
   <a href="https://github.com/nqchwanq129/nqchwanq129"><img src="assets/projects/profile.svg" width="49%" alt="nqchwanq129 ? a coffee-themed GitHub profile with custom illustrations and automated activity cards. View source code." /></a>
   <a href="https://github.com/nqchwanq129/web-orbcomm-location"><img src="assets/projects/orbcomm.svg" width="49%" alt="ORBCOMM Location Tracking ? a map dashboard for device locations, journeys, and commands. View source code." /></a>
 </p>
 
-## GitHub Stats
+### 📊 GitHub Stats
 
 <p align="center">
   <img src="profile-cards/stats-en.svg" width="48%" alt="Hoang's GitHub statistics" />
@@ -54,7 +54,7 @@
   <img src="profile-cards/langs-en.svg" width="48%" alt="Hoang's most used programming languages" />
 </p>
 
-## Activity Graph
+### 📈 Activity Graph
 
 <p align="center">
   <img src="profile-cards/activity-en.svg" width="100%" alt="Hoang's daily GitHub contributions over the last 30 days" />

@@ -1,5 +1,5 @@
 <p align="right">
-  <sub><a href="README.md" title="English">EN</a> · <strong>VI</strong></sub>
+  <sub><a href="README.en.md" title="English">EN</a> · <strong>VI</strong></sub>
 </p>
 
 <p align="center">

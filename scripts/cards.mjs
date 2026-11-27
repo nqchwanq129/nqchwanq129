@@ -181,7 +181,7 @@ function statsCard(lang, d, rk) {
   const body = [];
   rows.forEach(([label, value], i) => {
     const y = 72 + i * 26;
-    body.push(`<circle cx="30" cy="${y - 5}" r="3" fill="${C.ring}"/>`);
+    body.push(`<circle cx="30" cy="${y - 5}" r="3" fill="${C.title}"/>`);
     body.push(`<text x="42" y="${y}" font-size="14" fill="${C.sub}">${esc(label)}</text>`);
     body.push(`<text x="262" y="${y}" text-anchor="end" font-size="14" font-weight="700" fill="${C.text}">${n(value)}</text>`);
   });

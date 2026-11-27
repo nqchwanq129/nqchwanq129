@@ -2,19 +2,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="368" height="172" viewBox="16 16 368 172" role="img" aria-label="Le Ng.Hoang's GitHub Stats">
   <g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
   <text x="24" y="38" font-size="17" font-weight="700" fill="#E9D7BB">Le Ng.Hoang's GitHub Stats</text>
-  <circle cx="30" cy="67" r="3" fill="#58A6FF"/>
+  <circle cx="30" cy="67" r="3" fill="#E9D7BB"/>
   <text x="42" y="72" font-size="14" fill="#B1BAC4">Total stars</text>
   <text x="262" y="72" text-anchor="end" font-size="14" font-weight="700" fill="#E6EDF3">0</text>
-  <circle cx="30" cy="93" r="3" fill="#58A6FF"/>
+  <circle cx="30" cy="93" r="3" fill="#E9D7BB"/>
   <text x="42" y="98" font-size="14" fill="#B1BAC4">Commits (past year)</text>
   <text x="262" y="98" text-anchor="end" font-size="14" font-weight="700" fill="#E6EDF3">82</text>
-  <circle cx="30" cy="119" r="3" fill="#58A6FF"/>
+  <circle cx="30" cy="119" r="3" fill="#E9D7BB"/>
   <text x="42" y="124" font-size="14" fill="#B1BAC4">Pull requests</text>
   <text x="262" y="124" text-anchor="end" font-size="14" font-weight="700" fill="#E6EDF3">0</text>
-  <circle cx="30" cy="145" r="3" fill="#58A6FF"/>
+  <circle cx="30" cy="145" r="3" fill="#E9D7BB"/>
   <text x="42" y="150" font-size="14" fill="#B1BAC4">Issues</text>
   <text x="262" y="150" text-anchor="end" font-size="14" font-weight="700" fill="#E6EDF3">0</text>
-  <circle cx="30" cy="171" r="3" fill="#58A6FF"/>
+  <circle cx="30" cy="171" r="3" fill="#E9D7BB"/>
   <text x="42" y="176" font-size="14" fill="#B1BAC4">Repos contributed to</text>
   <text x="262" y="176" text-anchor="end" font-size="14" font-weight="700" fill="#E6EDF3">0</text>
   <circle cx="330" cy="112" r="40" fill="none" stroke="#21262D" stroke-width="8"/>

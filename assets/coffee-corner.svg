@@ -1,40 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="850" height="200" viewBox="0 0 850 200" role="img" aria-labelledby="title description">
-  <title id="title">Hoang's Coffee Corner</title>
-  <desc id="description">A cozy coffee break with three steaming cups: Espresso, Latte, and Cappuccino.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="240" viewBox="0 0 450 240" role="img" aria-labelledby="title description">
+  <title id="title">Coffee break with Hoang</title>
+  <desc id="description">Espresso, Latte, and Cappuccino with gently rising animated steam.</desc>
   <style>
     .heading { fill: #e6edf3; }
-    .caption { fill: #9198a1; }
-    .steam { fill: none; stroke: #c9a77b; stroke-width: 2.5; stroke-linecap: round; animation: rise 3.6s ease-in-out infinite; }
-    .delay-one { animation-delay: -1.2s; }
-    .delay-two { animation-delay: -2.4s; }
-    @keyframes rise {
-      0%, 100% { opacity: .12; transform: translateY(3px); }
-      50% { opacity: .65; transform: translateY(-6px); }
-    }
-    @media (prefers-color-scheme: light) {
-      .heading { fill: #24292f; }
-      .caption { fill: #57606a; }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      .steam { animation: none; opacity: .45; }
-    }
+    @media (prefers-color-scheme: light) { .heading { fill: #24292f; } }
   </style>
   <g font-family="'Segoe UI', Arial, sans-serif">
-    <text x="24" y="65" fill="#c9a77b" font-size="11" font-weight="700" letter-spacing="3">FRESHLY BREWED</text>
-    <text x="24" y="99" class="heading" font-size="25" font-weight="700">Hoang's Coffee Corner</text>
-    <text x="24" y="126" class="caption" font-size="13">A little coffee break between commits.</text>
-    <g transform="translate(420 0)">
-      <g class="steam"><path d="M-7 76 C-17 66 3 60 -6 49"/><path d="M10 72 C0 62 20 56 11 45"/></g>
+    <text x="225" y="23" text-anchor="middle" fill="#c9a77b" font-size="15" font-weight="600" letter-spacing="4">BREW. CODE. REPEAT.</text>
+    <g transform="translate(73 40)">
+      <g fill="none" stroke="#c9a77b" stroke-width="3" stroke-linecap="round">
+        <g opacity="0.6">
+          <animateTransform attributeName="transform" type="translate" values="0 9; 3 -5; -2 -19" dur="2.4s" begin="-0.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0.8;0" keyTimes="0;0.35;1" dur="2.4s" begin="-0.0s" repeatCount="indefinite"/>
+          <path d="M-10 67 C-21 58 1 50 -9 40"/>
+          <path d="M10 62 C0 53 22 45 12 35"/>
+        </g>
+        <g opacity="0.35">
+          <animateTransform attributeName="transform" type="translate" values="0 9; -3 -5; 2 -19" dur="2.4s" begin="-1.2s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0.65;0" keyTimes="0;0.35;1" dur="2.4s" begin="-1.2s" repeatCount="indefinite"/>
+          <path d="M0 65 C-11 56 11 48 1 38"/>
+        </g>
+      </g>
       <ellipse cx="0" cy="139" rx="49" ry="7" fill="#c9a77b" opacity=".15"/>
       <path d="M29 96 C56 91 56 125 30 121" fill="none" stroke="#d6b68c" stroke-width="8"/>
       <path d="M-33 93 H33 L27 120 Q24 134 0 134 Q-24 134 -27 120 Z" fill="#e9d7bb"/>
       <ellipse cx="0" cy="94" rx="33" ry="8" fill="#be8959"/>
       <ellipse cx="0" cy="94" rx="25" ry="5" fill="#563925"/>
       <path d="M-22 108 L-20 118" stroke="#fff6e8" stroke-width="4" stroke-linecap="round" opacity=".65"/>
-      <text x="0" y="174" text-anchor="middle" class="heading" font-size="14" font-weight="600">Espresso</text>
+      <text x="0" y="174" text-anchor="middle" class="heading" font-size="18" font-weight="600">Espresso</text>
     </g>
-    <g transform="translate(580 0)">
-      <g class="steam delay-one"><path d="M-9 62 C-19 52 1 46 -8 35"/><path d="M9 58 C-1 48 19 42 10 31"/></g>
+    <g transform="translate(219 40)">
+      <g fill="none" stroke="#c9a77b" stroke-width="3" stroke-linecap="round">
+        <g opacity="0.6">
+          <animateTransform attributeName="transform" type="translate" values="0 9; 3 -5; -2 -19" dur="2.4s" begin="-0.8s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0.8;0" keyTimes="0;0.35;1" dur="2.4s" begin="-0.8s" repeatCount="indefinite"/>
+          <path d="M-10 67 C-21 58 1 50 -9 40"/>
+          <path d="M10 62 C0 53 22 45 12 35"/>
+        </g>
+        <g opacity="0.35">
+          <animateTransform attributeName="transform" type="translate" values="0 9; -3 -5; 2 -19" dur="2.4s" begin="-2.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0.65;0" keyTimes="0;0.35;1" dur="2.4s" begin="-2.0s" repeatCount="indefinite"/>
+          <path d="M0 65 C-11 56 11 48 1 38"/>
+        </g>
+      </g>
       <ellipse cx="0" cy="139" rx="47" ry="7" fill="#c9a77b" opacity=".15"/>
       <path d="M29 89 C57 83 57 120 29 116" fill="none" stroke="#d6b68c" stroke-width="7"/>
       <path d="M-32 78 H32 L26 126 Q24 135 0 135 Q-24 135 -26 126 Z" fill="#e9d7bb"/>
@@ -43,10 +51,22 @@
       <ellipse cx="0" cy="78" rx="32" ry="8" fill="#fff2dd"/>
       <ellipse cx="0" cy="78" rx="16" ry="4" fill="#c89463"/>
       <path d="M-21 89 L-18 120" stroke="#fff6e8" stroke-width="4" stroke-linecap="round" opacity=".5"/>
-      <text x="0" y="174" text-anchor="middle" class="heading" font-size="14" font-weight="600">Latte</text>
+      <text x="0" y="174" text-anchor="middle" class="heading" font-size="18" font-weight="600">Latte</text>
     </g>
-    <g transform="translate(740 0)">
-      <g class="steam delay-two"><path d="M-8 70 C-18 60 2 54 -7 43"/><path d="M10 66 C0 56 20 50 11 39"/></g>
+    <g transform="translate(365 40)">
+      <g fill="none" stroke="#c9a77b" stroke-width="3" stroke-linecap="round">
+        <g opacity="0.6">
+          <animateTransform attributeName="transform" type="translate" values="0 9; 3 -5; -2 -19" dur="2.4s" begin="-1.6s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0.8;0" keyTimes="0;0.35;1" dur="2.4s" begin="-1.6s" repeatCount="indefinite"/>
+          <path d="M-10 67 C-21 58 1 50 -9 40"/>
+          <path d="M10 62 C0 53 22 45 12 35"/>
+        </g>
+        <g opacity="0.35">
+          <animateTransform attributeName="transform" type="translate" values="0 9; -3 -5; 2 -19" dur="2.4s" begin="-2.8s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0.65;0" keyTimes="0;0.35;1" dur="2.4s" begin="-2.8s" repeatCount="indefinite"/>
+          <path d="M0 65 C-11 56 11 48 1 38"/>
+        </g>
+      </g>
       <ellipse cx="0" cy="139" rx="50" ry="7" fill="#c9a77b" opacity=".15"/>
       <path d="M32 96 C62 89 59 125 31 120" fill="none" stroke="#d6b68c" stroke-width="8"/>
       <path d="M-37 91 H37 Q36 133 0 135 Q-36 133 -37 91 Z" fill="#e9d7bb"/>
@@ -54,7 +74,7 @@
       <ellipse cx="0" cy="90" rx="29" ry="6" fill="#fff2dd"/>
       <path d="M0 94 C-16 85 -7 81 0 87 C7 81 16 85 0 94 Z" fill="#c89463"/>
       <path d="M-24 106 Q-22 117 -14 121" stroke="#fff6e8" stroke-width="4" stroke-linecap="round" opacity=".65"/>
-      <text x="0" y="174" text-anchor="middle" class="heading" font-size="14" font-weight="600">Cappuccino</text>
+      <text x="0" y="174" text-anchor="middle" class="heading" font-size="18" font-weight="600">Cappuccino</text>
     </g>
   </g>
 </svg>

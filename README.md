@@ -59,11 +59,11 @@
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img src="profile-cards/overview-en.svg" width="100%" alt="Hoang's GitHub statistics and most used programming languages" />
+  <img src="profile-cards/overview-en.svg?v=cream-2" width="100%" alt="Hoang's GitHub statistics and most used programming languages" />
 </p>
 
 ### 📈 Activity Graph
 
 <p align="center">
-  <img src="profile-cards/activity-en.svg" width="100%" alt="Hoang's daily GitHub contributions over the last 30 days" />
+  <img src="profile-cards/activity-en.svg?v=cream-2" width="100%" alt="Hoang's daily GitHub contributions over the last 30 days" />
 </p>

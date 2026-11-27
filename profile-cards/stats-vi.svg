@@ -1,36 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="200" viewBox="0 0 400 200" role="img" aria-label="Thống kê GitHub của Le Ng.Hoang">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#2E1E14"/>
-      <stop offset="1" stop-color="#1C120B"/>
-    </linearGradient>
-    <clipPath id="card"><rect width="400" height="200" rx="14"/></clipPath>
-  </defs>
-  <g clip-path="url(#card)">
-    <rect width="400" height="200" fill="url(#bg)"/>
-  </g>
-  <rect x="0.75" y="0.75" width="398.5" height="198.5" rx="13.25" fill="none" stroke="#6F4E37" stroke-width="1.5"/>
+  <rect x="0.75" y="0.75" width="398.5" height="198.5" rx="13.25" fill="none" stroke="#303D4B" stroke-width="1.5"/>
   <g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
-  <text x="24" y="38" font-size="17" font-weight="700" fill="#E6A15C">Thống kê GitHub của Le Ng.Hoang</text>
-  <circle cx="30" cy="67" r="3" fill="#C08552"/>
-  <text x="42" y="72" font-size="14" fill="#D7B899">Tổng số sao</text>
-  <text x="262" y="72" text-anchor="end" font-size="14" font-weight="700" fill="#F5E6D3">0</text>
-  <circle cx="30" cy="93" r="3" fill="#C08552"/>
-  <text x="42" y="98" font-size="14" fill="#D7B899">Commit (12 tháng qua)</text>
-  <text x="262" y="98" text-anchor="end" font-size="14" font-weight="700" fill="#F5E6D3">61</text>
-  <circle cx="30" cy="119" r="3" fill="#C08552"/>
-  <text x="42" y="124" font-size="14" fill="#D7B899">Pull request</text>
-  <text x="262" y="124" text-anchor="end" font-size="14" font-weight="700" fill="#F5E6D3">0</text>
-  <circle cx="30" cy="145" r="3" fill="#C08552"/>
-  <text x="42" y="150" font-size="14" fill="#D7B899">Issue</text>
-  <text x="262" y="150" text-anchor="end" font-size="14" font-weight="700" fill="#F5E6D3">0</text>
-  <circle cx="30" cy="171" r="3" fill="#C08552"/>
-  <text x="42" y="176" font-size="14" fill="#D7B899">Repo đã đóng góp</text>
-  <text x="262" y="176" text-anchor="end" font-size="14" font-weight="700" fill="#F5E6D3">0</text>
-  <circle cx="330" cy="112" r="40" fill="none" stroke="#4B2E1E" stroke-width="8"/>
-  <circle cx="330" cy="112" r="40" fill="none" stroke="#C08552" stroke-width="8" stroke-linecap="round" stroke-dasharray="6.5 251.3" transform="rotate(-90 330 112)"/>
-  <text x="330" y="121" text-anchor="middle" font-size="26" font-weight="700" fill="#F5E6D3">C</text>
-  <text x="330" y="176" text-anchor="middle" font-size="12" fill="#9C7A5E">Hạng</text>
+  <text x="24" y="38" font-size="17" font-weight="700" fill="#58A6FF">Thống kê GitHub của Le Ng.Hoang</text>
+  <circle cx="30" cy="67" r="3" fill="#58A6FF"/>
+  <text x="42" y="72" font-size="14" fill="#B1BAC4">Tổng số sao</text>
+  <text x="262" y="72" text-anchor="end" font-size="14" font-weight="700" fill="#E6EDF3">0</text>
+  <circle cx="30" cy="93" r="3" fill="#58A6FF"/>
+  <text x="42" y="98" font-size="14" fill="#B1BAC4">Commit (12 tháng qua)</text>
+  <text x="262" y="98" text-anchor="end" font-size="14" font-weight="700" fill="#E6EDF3">62</text>
+  <circle cx="30" cy="119" r="3" fill="#58A6FF"/>
+  <text x="42" y="124" font-size="14" fill="#B1BAC4">Pull request</text>
+  <text x="262" y="124" text-anchor="end" font-size="14" font-weight="700" fill="#E6EDF3">0</text>
+  <circle cx="30" cy="145" r="3" fill="#58A6FF"/>
+  <text x="42" y="150" font-size="14" fill="#B1BAC4">Issue</text>
+  <text x="262" y="150" text-anchor="end" font-size="14" font-weight="700" fill="#E6EDF3">0</text>
+  <circle cx="30" cy="171" r="3" fill="#58A6FF"/>
+  <text x="42" y="176" font-size="14" fill="#B1BAC4">Repo đã đóng góp</text>
+  <text x="262" y="176" text-anchor="end" font-size="14" font-weight="700" fill="#E6EDF3">0</text>
+  <circle cx="330" cy="112" r="40" fill="none" stroke="#21262D" stroke-width="8"/>
+  <circle cx="330" cy="112" r="40" fill="none" stroke="#58A6FF" stroke-width="8" stroke-linecap="round" stroke-dasharray="6.6 251.3" transform="rotate(-90 330 112)"/>
+  <text x="330" y="121" text-anchor="middle" font-size="26" font-weight="700" fill="#E6EDF3">C</text>
+  <text x="330" y="176" text-anchor="middle" font-size="12" fill="#9198A1">Hạng</text>
   </g>
 </svg>

@@ -2,6 +2,12 @@
   <img src="Banner/Hoang%E2%80%99s%20Cozy%20Code%20Caf%C3%A9.png" width="100%" alt="Hoang’s Cozy Code Café — coding, coffee, and cats" />
 </p>
 
+<p align="center">
+  <a href="https://github.com/nqchwanq129"><img src="assets/social/github.svg" width="132" height="38" alt="GitHub: nqchwanq129" /></a>
+  <a href="https://www.linkedin.com/in/lehoang129/"><img src="assets/social/linkedin.svg" width="132" height="38" alt="LinkedIn: Le Hoang" /></a>
+  <a href="https://leetcode.com/u/lenghoang129/"><img src="assets/social/leetcode.svg" width="132" height="38" alt="LeetCode: lenghoang129" /></a>
+</p>
+
 ### 👋 About Me
 
 <img align="right" src="assets/coffee-corner.svg" width="300" height="127" alt="Espresso, Latte, and Cappuccino with rising animated steam" />

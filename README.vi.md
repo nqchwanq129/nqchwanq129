@@ -1,6 +1,5 @@
 <p align="right">
-  <a href="README.md" lang="en"><img src="assets/languages/en.svg" width="88" height="28" alt="English" /></a>
-  <a href="README.vi.md" lang="vi"><img src="assets/languages/vi-active.svg" width="108" height="28" alt="Tiếng Việt" /></a>
+  <sub><a href="README.md" title="English">EN</a> · <strong>VI</strong></sub>
 </p>
 
 <p align="center">

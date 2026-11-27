@@ -3,8 +3,7 @@ import { readFileSync, writeFileSync } from 'node:fs';
 
 const root = new URL('../', import.meta.url);
 const replacements = [
-  ['assets/languages/en-active.svg', 'assets/languages/en.svg'],
-  ['assets/languages/vi.svg', 'assets/languages/vi-active.svg'],
+  ['<strong>EN</strong> · <a href="README.vi.md" title="Tiếng Việt">VI</a>', '<a href="README.md" title="English">EN</a> · <strong>VI</strong>'],
   ['About Me', 'Giới thiệu'],
   ["Hi, I'm Hoang, a curious human from Vietnam.", 'Xin chào, mình là Hoàng, một người luôn tò mò đến từ Việt Nam.'],
   ['I enjoy exploring technology and building things for fun.', 'Mình thích khám phá công nghệ và tạo ra những điều thú vị.'],

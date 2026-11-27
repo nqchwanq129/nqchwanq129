@@ -17,6 +17,7 @@ const W = 400, H = 200;
 const SANS = "'Segoe UI', 'Helvetica Neue', Arial, sans-serif";
 const C = {
   text: '#E6EDF3', sub: '#B1BAC4', muted: '#9198A1', accent: '#58A6FF',
+  title: '#E9D7BB',
   track: '#21262D', ring: '#58A6FF',
 };
 // Nhóm màu tương phản cao (xanh lá, lam, tím, vàng, đỏ, teal...) để dễ phân biệt trên nền tối.
@@ -165,7 +166,7 @@ function card(title, body, aria) {
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="${W - 32}" height="${H - 28}" viewBox="16 16 ${W - 32} ${H - 28}" role="img" aria-label="${esc(aria)}">
   <g font-family="${SANS}">
-  <text x="24" y="38" font-size="17" font-weight="700" fill="${C.accent}">${esc(title)}</text>
+  <text x="24" y="38" font-size="17" font-weight="700" fill="${C.title}">${esc(title)}</text>
   ${body.join('\n  ')}
   </g>
 </svg>
@@ -263,7 +264,7 @@ function activityGraph(lang, days) {
   <desc id="description">${esc(subtitle)}. ${esc(days.map((day) => `${day.date}: ${day.contributionCount}`).join('; '))}</desc>
   <defs><linearGradient id="activity-fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${C.accent}" stop-opacity="0.22"/><stop offset="1" stop-color="${C.accent}" stop-opacity="0.01"/></linearGradient></defs>
   <g font-family="${SANS}">
-    <text x="24" y="29" font-size="17" font-weight="700" fill="${C.accent}">${esc(title)}</text>
+    <text x="24" y="29" font-size="17" font-weight="700" fill="${C.title}">${esc(title)}</text>
     <text x="24" y="48" font-size="12" fill="${C.muted}">${esc(subtitle)}</text>
     ${body.join('\n    ')}
     <path d="${area}" fill="url(#activity-fill)"/>

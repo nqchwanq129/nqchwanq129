@@ -4,7 +4,7 @@
   <desc id="description">44 đóng góp · 30 ngày gần nhất. 2026-10-29: 0; 2026-10-30: 0; 2026-10-31: 0; 2026-11-01: 0; 2026-11-02: 0; 2026-11-03: 0; 2026-11-04: 0; 2026-11-05: 0; 2026-11-06: 0; 2026-11-07: 0; 2026-11-08: 0; 2026-11-09: 1; 2026-11-10: 1; 2026-11-11: 10; 2026-11-12: 0; 2026-11-13: 0; 2026-11-14: 0; 2026-11-15: 0; 2026-11-16: 0; 2026-11-17: 0; 2026-11-18: 0; 2026-11-19: 0; 2026-11-20: 0; 2026-11-21: 0; 2026-11-22: 0; 2026-11-23: 0; 2026-11-24: 0; 2026-11-25: 0; 2026-11-26: 10; 2026-11-27: 22</desc>
   <defs><linearGradient id="activity-fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#58A6FF" stop-opacity="0.22"/><stop offset="1" stop-color="#58A6FF" stop-opacity="0.01"/></linearGradient></defs>
   <g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
-    <text x="24" y="29" font-size="17" font-weight="700" fill="#58A6FF">Hoạt động đóng góp</text>
+    <text x="24" y="29" font-size="17" font-weight="700" fill="#E9D7BB">Hoạt động đóng góp</text>
     <text x="24" y="48" font-size="12" fill="#9198A1">44 đóng góp · 30 ngày gần nhất</text>
     <line x1="48" y1="204" x2="826" y2="204" stroke="#21262D" stroke-dasharray="3 5"/>
     <text x="34" y="208" text-anchor="end" fill="#9198A1" font-size="11">0</text>

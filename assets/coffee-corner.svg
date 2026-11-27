@@ -6,7 +6,6 @@
     @media (prefers-color-scheme: light) { .heading { fill: #24292f; } }
   </style>
   <g font-family="'Segoe UI', Arial, sans-serif">
-    <text x="225" y="23" text-anchor="middle" fill="#c9a77b" font-size="15" font-weight="600" letter-spacing="4">BREW. CODE. REPEAT.</text>
     <g transform="translate(73 40)">
       <g fill="none" stroke="#c9a77b" stroke-width="3" stroke-linecap="round">
         <g opacity="0.6">

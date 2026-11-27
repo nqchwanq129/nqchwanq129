@@ -9,3 +9,11 @@
 - ☕ Powered by coffee, curiosity, and a little bit of code.
 - 🐈 A cat lover who enjoys the little things in life.
 - 🌱 Always learning, experimenting, and enjoying the journey.
+
+## GitHub Stats
+
+<p align="center">
+  <img src="profile-cards/stats-en.svg" width="48%" alt="Hoang's GitHub statistics" />
+  &nbsp;
+  <img src="profile-cards/langs-en.svg" width="48%" alt="Hoang's most used programming languages" />
+</p>

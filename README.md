@@ -42,16 +42,15 @@
 ### 🚀 Featured Projects
 
 <p align="center">
-  <a href="https://github.com/nqchwanq129/nqchwanq129"><img src="assets/projects/profile.svg" width="49%" alt="nqchwanq129 ? a coffee-themed GitHub profile with custom illustrations and automated activity cards. View source code." /></a>
-  <a href="https://github.com/nqchwanq129/web-orbcomm-location"><img src="assets/projects/orbcomm.svg" width="49%" alt="ORBCOMM Location Tracking ? a map dashboard for device locations, journeys, and commands. View source code." /></a>
+  <a href="https://github.com/nqchwanq129/nqchwanq129"><img src="assets/projects/profile.svg" width="49%" align="top" alt="nqchwanq129: a coffee-themed GitHub profile with custom illustrations and automated activity cards. View source code." /></a>
+  <a href="https://github.com/nqchwanq129/web-orbcomm-location"><img src="assets/projects/orbcomm.svg" width="49%" align="top" alt="ORBCOMM Location Tracking: a map dashboard for device locations, journeys, and commands. View source code." /></a>
 </p>
 
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img src="profile-cards/stats-en.svg" width="48%" alt="Hoang's GitHub statistics" />
-  &nbsp;
-  <img src="profile-cards/langs-en.svg" width="48%" alt="Hoang's most used programming languages" />
+  <img src="profile-cards/stats-en.svg" width="49%" align="top" alt="Hoang's GitHub statistics" />
+  <img src="profile-cards/langs-en.svg" width="49%" align="top" alt="Hoang's most used programming languages" />
 </p>
 
 ### 📈 Activity Graph

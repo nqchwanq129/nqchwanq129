@@ -163,7 +163,7 @@ function rank(d) {
 
 function card(title, body, aria) {
   return `<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(aria)}">
+<svg xmlns="http://www.w3.org/2000/svg" width="${W - 32}" height="${H - 28}" viewBox="16 16 ${W - 32} ${H - 28}" role="img" aria-label="${esc(aria)}">
   <g font-family="${SANS}">
   <text x="24" y="38" font-size="17" font-weight="700" fill="${C.accent}">${esc(title)}</text>
   ${body.join('\n  ')}
@@ -233,7 +233,7 @@ function langsCard(lang, d) {
 
 function activityGraph(lang, days) {
   const vi = lang === 'vi';
-  const width = 850, height = 250;
+  const width = 850, height = 226;
   const left = 48, right = 826, top = 66, bottom = 204;
   const max = Math.max(1, ...days.map((day) => day.contributionCount));
   const step = Math.max(1, Math.ceil(max / 4));
@@ -258,7 +258,7 @@ function activityGraph(lang, days) {
     body.push(`<text x="${x(i)}" y="228" text-anchor="${i === 0 ? 'start' : i === days.length - 1 ? 'end' : 'middle'}" fill="${C.muted}" font-size="11">${esc(formatDate(days[i].date))}</text>`);
   }
   return `<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 12 ${width} ${height}" role="img" aria-labelledby="title description">
   <title id="title">${esc(title)}</title>
   <desc id="description">${esc(subtitle)}. ${esc(days.map((day) => `${day.date}: ${day.contributionCount}`).join('; '))}</desc>
   <defs><linearGradient id="activity-fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${C.accent}" stop-opacity="0.22"/><stop offset="1" stop-color="${C.accent}" stop-opacity="0.01"/></linearGradient></defs>

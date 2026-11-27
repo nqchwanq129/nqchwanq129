@@ -262,13 +262,13 @@ function activityGraph(lang, days) {
 <svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 12 ${width} ${height}" role="img" aria-labelledby="title description">
   <title id="title">${esc(title)}</title>
   <desc id="description">${esc(subtitle)}. ${esc(days.map((day) => `${day.date}: ${day.contributionCount}`).join('; '))}</desc>
-  <defs><linearGradient id="activity-fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${C.accent}" stop-opacity="0.22"/><stop offset="1" stop-color="${C.accent}" stop-opacity="0.01"/></linearGradient></defs>
+  <defs><linearGradient id="activity-fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${C.title}" stop-opacity="0.22"/><stop offset="1" stop-color="${C.title}" stop-opacity="0.01"/></linearGradient></defs>
   <g font-family="${SANS}">
     <text x="24" y="29" font-size="17" font-weight="700" fill="${C.title}">${esc(title)}</text>
     <text x="24" y="48" font-size="12" fill="${C.muted}">${esc(subtitle)}</text>
     ${body.join('\n    ')}
     <path d="${area}" fill="url(#activity-fill)"/>
-    <path d="${line}" fill="none" stroke="${C.accent}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="${line}" fill="none" stroke="${C.title}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
 </svg>
 `;

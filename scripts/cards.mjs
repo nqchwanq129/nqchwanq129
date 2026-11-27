@@ -1,4 +1,4 @@
-// Transparent GitHub-themed Stats + Top languages cards (English + Vietnamese).
+// Transparent GitHub-themed cards and contribution activity graphs (English + Vietnamese).
 // Usage: node scripts/cards.mjs <outDir> [--demo]
 // Needs GITHUB_TOKEN and GH_USER (set by the workflow). --demo draws random data for a local preview.
 // Everything is drawn here from the GitHub API: no third-party card service.
@@ -98,6 +98,25 @@ async function fetchData() {
     cursor = r.repositories.pageInfo.hasNextPage ? r.repositories.pageInfo.endCursor : null;
   } while (cursor);
 
+  // Fetch only the last 30 calendar days for the activity graph.
+  const to = new Date();
+  const from = new Date(to);
+  from.setUTCDate(from.getUTCDate() - 29);
+  from.setUTCHours(0, 0, 0, 0);
+  const activity = await gql(`query($login: String!, $from: DateTime!, $to: DateTime!) {
+    user(login: $login) {
+      contributionsCollection(from: $from, to: $to) {
+        contributionCalendar {
+          weeks { contributionDays { date contributionCount } }
+        }
+      }
+    }
+  }`, { login: user, from: from.toISOString(), to: to.toISOString() });
+  const days = activity.contributionsCollection.contributionCalendar.weeks
+    .flatMap((week) => week.contributionDays)
+    .filter((day) => day.date >= from.toISOString().slice(0, 10) && day.date <= to.toISOString().slice(0, 10))
+    .sort((a, b) => a.date.localeCompare(b.date));
+  if (!days.length) throw new Error('GitHub returned no contribution calendar days');
   const cc = u.contributionsCollection;
   return {
     name: u.name, login: u.login, stars,
@@ -108,7 +127,7 @@ async function fetchData() {
     contrib: u.repositoriesContributedTo.totalCount,
     reviews: cc.totalPullRequestReviewContributions,
     followers: u.followers.totalCount,
-    langs,
+    langs, days,
   };
 }
 
@@ -119,6 +138,10 @@ function demoData() {
     name: null, login: user, stars: r(5, 300), commits: r(100, 1500), prs: r(5, 120), issues: r(2, 60),
     contrib: r(1, 25), reviews: r(0, 20), followers: r(3, 200),
     langs: new Map(names.map((n) => [n, Math.round(Math.random() ** 3 * 1e6) + 1000])),
+    days: Array.from({ length: 30 }, (_, i) => ({
+      date: new Date(Date.now() - (29 - i) * 86400000).toISOString().slice(0, 10),
+      contributionCount: r(0, 18),
+    })),
   };
 }
 
@@ -208,6 +231,48 @@ function langsCard(lang, d) {
   return card(t.langsTitle, body, t.langsTitle);
 }
 
+function activityGraph(lang, days) {
+  const vi = lang === 'vi';
+  const width = 850, height = 250;
+  const left = 48, right = 826, top = 66, bottom = 204;
+  const max = Math.max(1, ...days.map((day) => day.contributionCount));
+  const step = Math.max(1, Math.ceil(max / 4));
+  const ceiling = step * 4;
+  const x = (i) => left + i * (right - left) / Math.max(1, days.length - 1);
+  const y = (value) => bottom - value * (bottom - top) / ceiling;
+  const total = days.reduce((sum, day) => sum + day.contributionCount, 0);
+  const title = vi ? 'Hoạt động đóng góp' : 'Contribution Activity';
+  const subtitle = vi ? `${total} đóng góp · ${days.length} ngày gần nhất` : `${total} contributions · Last ${days.length} days`;
+  const formatDate = (date) => new Intl.DateTimeFormat(vi ? 'vi-VN' : 'en-US', {
+    day: 'numeric', month: 'short', timeZone: 'UTC',
+  }).format(new Date(`${date}T00:00:00Z`));
+  const line = days.map((day, i) => `${i ? 'L' : 'M'}${x(i).toFixed(2)},${y(day.contributionCount).toFixed(2)}`).join(' ');
+  const area = `${line} L${x(days.length - 1).toFixed(2)},${bottom} L${left},${bottom} Z`;
+  const body = [];
+  for (let i = 0; i <= 4; i++) {
+    const value = step * i, py = y(value);
+    body.push(`<line x1="${left}" y1="${py}" x2="${right}" y2="${py}" stroke="${C.track}" stroke-dasharray="3 5"/>`);
+    body.push(`<text x="34" y="${py + 4}" text-anchor="end" fill="${C.muted}" font-size="11">${value}</text>`);
+  }
+  for (const i of [...new Set([0, 7, 14, 21, days.length - 1].filter((i) => i < days.length))]) {
+    body.push(`<text x="${x(i)}" y="228" text-anchor="${i === 0 ? 'start' : i === days.length - 1 ? 'end' : 'middle'}" fill="${C.muted}" font-size="11">${esc(formatDate(days[i].date))}</text>`);
+  }
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="title description">
+  <title id="title">${esc(title)}</title>
+  <desc id="description">${esc(subtitle)}. ${esc(days.map((day) => `${day.date}: ${day.contributionCount}`).join('; '))}</desc>
+  <defs><linearGradient id="activity-fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${C.accent}" stop-opacity="0.22"/><stop offset="1" stop-color="${C.accent}" stop-opacity="0.01"/></linearGradient></defs>
+  <g font-family="${SANS}">
+    <text x="24" y="29" font-size="17" font-weight="700" fill="${C.accent}">${esc(title)}</text>
+    <text x="24" y="48" font-size="12" fill="${C.muted}">${esc(subtitle)}</text>
+    ${body.join('\n    ')}
+    <path d="${area}" fill="url(#activity-fill)"/>
+    <path d="${line}" fill="none" stroke="${C.accent}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
+`;
+}
+
 const d = demo ? demoData() : await fetchData();
 const rk = rank(d);
 mkdirSync(outDir, { recursive: true });
@@ -216,5 +281,6 @@ for (const lang of ['en', 'vi']) {
     writeFileSync(join(outDir, file), svg);
     console.log(`Wrote ${join(outDir, file)}`);
   }
+  writeFileSync(join(outDir, `activity-${lang}.svg`), activityGraph(lang, d.days));
 }
 console.log(JSON.stringify({ ...d, langs: Object.fromEntries(d.langs), rank: rk.level }));

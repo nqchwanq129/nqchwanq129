@@ -1,4 +1,4 @@
-# Vẽ thẻ Stats + Top ngôn ngữ bằng scripts/cards.mjs (dữ liệu từ GitHub API của chính repo này),
+# Vẽ thẻ Stats, Top ngôn ngữ và Activity Graph bằng scripts/cards.mjs (dữ liệu từ GitHub API),
 # rồi commit vào profile-cards/ trên nhánh main (chỉ commit khi số liệu thay đổi).
 #
 # Workflow này KHÔNG dùng `uses:` nào: không actions/checkout, không actions/setup-node,

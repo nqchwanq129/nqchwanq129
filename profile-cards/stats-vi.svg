@@ -7,7 +7,7 @@
   <text x="262" y="72" text-anchor="end" font-size="14" font-weight="700" fill="#E6EDF3">0</text>
   <circle cx="30" cy="93" r="3" fill="#58A6FF"/>
   <text x="42" y="98" font-size="14" fill="#B1BAC4">Commit (12 tháng qua)</text>
-  <text x="262" y="98" text-anchor="end" font-size="14" font-weight="700" fill="#E6EDF3">253</text>
+  <text x="262" y="98" text-anchor="end" font-size="14" font-weight="700" fill="#E6EDF3">254</text>
   <circle cx="30" cy="119" r="3" fill="#58A6FF"/>
   <text x="42" y="124" font-size="14" fill="#B1BAC4">Pull request</text>
   <text x="262" y="124" text-anchor="end" font-size="14" font-weight="700" fill="#E6EDF3">0</text>
@@ -18,7 +18,7 @@
   <text x="42" y="176" font-size="14" fill="#B1BAC4">Repo đã đóng góp</text>
   <text x="262" y="176" text-anchor="end" font-size="14" font-weight="700" fill="#E6EDF3">0</text>
   <circle cx="330" cy="112" r="40" fill="none" stroke="#21262D" stroke-width="8"/>
-  <circle cx="330" cy="112" r="40" fill="none" stroke="#58A6FF" stroke-width="8" stroke-linecap="round" stroke-dasharray="21.1 251.3" transform="rotate(-90 330 112)"/>
+  <circle cx="330" cy="112" r="40" fill="none" stroke="#58A6FF" stroke-width="8" stroke-linecap="round" stroke-dasharray="21.2 251.3" transform="rotate(-90 330 112)"/>
   <text x="330" y="121" text-anchor="middle" font-size="26" font-weight="700" fill="#E6EDF3">C</text>
   <text x="330" y="176" text-anchor="middle" font-size="12" fill="#9198A1">Hạng</text>
   </g>

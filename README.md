@@ -37,6 +37,21 @@
   <img src="assets/skill-icons/github.svg" width="48" height="48" title="GitHub" alt="GitHub" />
 </p>
 
+## Featured Projects
+
+### [ORBCOMM Location Tracking](https://github.com/nqchwanq129/web-orbcomm-location)
+
+A web dashboard for tracking ORBCOMM device locations, exploring journey history, and sending commands to devices.
+
+<p>
+  <img src="assets/skill-icons/csharp.svg" width="32" height="32" title="C#" alt="C#" />
+  <img src="assets/skill-icons/dotnet.svg" width="32" height="32" title="ASP.NET Core 8" alt="ASP.NET Core 8" />
+  <img src="assets/skill-icons/javascript.svg" width="32" height="32" title="JavaScript" alt="JavaScript" />
+  <img src="assets/skill-icons/sqlserver.svg" width="32" height="32" title="SQL Server" alt="SQL Server" />
+</p>
+
+[Source Code ↗](https://github.com/nqchwanq129/web-orbcomm-location)
+
 ## GitHub Stats
 
 <p align="center">

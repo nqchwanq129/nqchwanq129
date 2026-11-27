@@ -273,14 +273,29 @@ function activityGraph(lang, days) {
 `;
 }
 
+function overviewCard(stats, languages) {
+  const place = (svg, x) => svg.replace(/<\?xml[^>]*>\s*/, '')
+    .replace('<svg ', `<svg x="${x}" y="4" `)
+    .replace(`width="${W - 32}" height="${H - 28}"`, 'width="408" height="191"');
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="850" height="200" viewBox="0 0 850 200" role="img" aria-label="GitHub statistics and most used languages">
+  <style>.divider { stroke: #30363d; } @media (prefers-color-scheme: light) { .divider { stroke: #d0d7de; } }</style>
+  ${place(stats, 0)}
+  <line x1="425" y1="12" x2="425" y2="188" class="divider" stroke-width="1"/>
+  ${place(languages, 442)}
+</svg>\n`;
+}
+
 const d = demo ? demoData() : await fetchData();
 const rk = rank(d);
 mkdirSync(outDir, { recursive: true });
 for (const lang of ['en', 'vi']) {
-  for (const [file, svg] of [[`stats-${lang}.svg`, statsCard(lang, d, rk)], [`langs-${lang}.svg`, langsCard(lang, d)]]) {
+  const stats = statsCard(lang, d, rk);
+  const languages = langsCard(lang, d);
+  for (const [file, svg] of [[`stats-${lang}.svg`, stats], [`langs-${lang}.svg`, languages]]) {
     writeFileSync(join(outDir, file), svg);
     console.log(`Wrote ${join(outDir, file)}`);
   }
   writeFileSync(join(outDir, `activity-${lang}.svg`), activityGraph(lang, d.days));
+  writeFileSync(join(outDir, `overview-${lang}.svg`), overviewCard(stats, languages));
 }
 console.log(JSON.stringify({ ...d, langs: Object.fromEntries(d.langs), rank: rk.level }));

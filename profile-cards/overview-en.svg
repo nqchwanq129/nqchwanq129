@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="200" viewBox="0 0 850 200" role="img" aria-label="GitHub statistics and most used languages">
+  <style>.divider { stroke: #30363d; } @media (prefers-color-scheme: light) { .divider { stroke: #d0d7de; } }</style>
+  <svg x="0" y="4" xmlns="http://www.w3.org/2000/svg" width="408" height="191" viewBox="16 16 368 172" role="img" aria-label="Le Ng.Hoang's GitHub Stats">
+  <g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <text x="24" y="38" font-size="17" font-weight="700" fill="#58A6FF">Le Ng.Hoang's GitHub Stats</text>
+  <circle cx="30" cy="67" r="3" fill="#58A6FF"/>
+  <text x="42" y="72" font-size="14" fill="#B1BAC4">Total stars</text>
+  <text x="262" y="72" text-anchor="end" font-size="14" font-weight="700" fill="#E6EDF3">0</text>
+  <circle cx="30" cy="93" r="3" fill="#58A6FF"/>
+  <text x="42" y="98" font-size="14" fill="#B1BAC4">Commits (past year)</text>
+  <text x="262" y="98" text-anchor="end" font-size="14" font-weight="700" fill="#E6EDF3">77</text>
+  <circle cx="30" cy="119" r="3" fill="#58A6FF"/>
+  <text x="42" y="124" font-size="14" fill="#B1BAC4">Pull requests</text>
+  <text x="262" y="124" text-anchor="end" font-size="14" font-weight="700" fill="#E6EDF3">0</text>
+  <circle cx="30" cy="145" r="3" fill="#58A6FF"/>
+  <text x="42" y="150" font-size="14" fill="#B1BAC4">Issues</text>
+  <text x="262" y="150" text-anchor="end" font-size="14" font-weight="700" fill="#E6EDF3">0</text>
+  <circle cx="30" cy="171" r="3" fill="#58A6FF"/>
+  <text x="42" y="176" font-size="14" fill="#B1BAC4">Repos contributed to</text>
+  <text x="262" y="176" text-anchor="end" font-size="14" font-weight="700" fill="#E6EDF3">0</text>
+  <circle cx="330" cy="112" r="40" fill="none" stroke="#21262D" stroke-width="8"/>
+  <circle cx="330" cy="112" r="40" fill="none" stroke="#58A6FF" stroke-width="8" stroke-linecap="round" stroke-dasharray="8.1 251.3" transform="rotate(-90 330 112)"/>
+  <text x="330" y="121" text-anchor="middle" font-size="26" font-weight="700" fill="#E6EDF3">C</text>
+  <text x="330" y="176" text-anchor="middle" font-size="12" fill="#9198A1">Rank</text>
+  </g>
+</svg>
+
+  <line x1="425" y1="12" x2="425" y2="188" class="divider" stroke-width="1"/>
+  <svg x="442" y="4" xmlns="http://www.w3.org/2000/svg" width="408" height="191" viewBox="16 16 368 172" role="img" aria-label="Most used languages">
+  <g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <text x="24" y="38" font-size="17" font-weight="700" fill="#58A6FF">Most used languages</text>
+  <clipPath id="bar"><rect x="24" y="54" width="352" height="10" rx="5"/></clipPath>
+  <g clip-path="url(#bar)"><rect x="24" y="54" width="352" height="10" fill="#21262D"/>
+  <rect x="24.00" y="54" width="140.36" height="10" fill="#F2C14E"/>
+  <rect x="164.36" y="54" width="105.65" height="10" fill="#57C785"/>
+  <rect x="270.01" y="54" width="68.21" height="10" fill="#4FA3E3"/>
+  <rect x="338.22" y="54" width="25.25" height="10" fill="#A78BFA"/>
+  <rect x="363.47" y="54" width="9.73" height="10" fill="#E8695E"/>
+  <rect x="373.20" y="54" width="2.50" height="10" fill="#3FC7C7"/>
+  <rect x="375.70" y="54" width="0.30" height="10" fill="#DB61A2"/>
+  </g>
+  <circle cx="29" cy="89" r="5" fill="#F2C14E"/>
+  <text x="42" y="94" font-size="13" fill="#E6EDF3">TypeScript</text>
+  <text x="188" y="94" text-anchor="end" font-size="12.5" font-weight="600" fill="#E6EDF3">39.9%</text>
+  <circle cx="29" cy="116" r="5" fill="#57C785"/>
+  <text x="42" y="121" font-size="13" fill="#E6EDF3">JavaScript</text>
+  <text x="188" y="121" text-anchor="end" font-size="12.5" font-weight="600" fill="#E6EDF3">30.0%</text>
+  <circle cx="29" cy="143" r="5" fill="#4FA3E3"/>
+  <text x="42" y="148" font-size="13" fill="#E6EDF3">CSS</text>
+  <text x="188" y="148" text-anchor="end" font-size="12.5" font-weight="600" fill="#E6EDF3">19.4%</text>
+  <circle cx="29" cy="170" r="5" fill="#A78BFA"/>
+  <text x="42" y="175" font-size="13" fill="#E6EDF3">C#</text>
+  <text x="188" y="175" text-anchor="end" font-size="12.5" font-weight="600" fill="#E6EDF3">7.2%</text>
+  <circle cx="217" cy="89" r="5" fill="#E8695E"/>
+  <text x="230" y="94" font-size="13" fill="#E6EDF3">HTML</text>
+  <text x="376" y="94" text-anchor="end" font-size="12.5" font-weight="600" fill="#E6EDF3">2.8%</text>
+  <circle cx="217" cy="116" r="5" fill="#3FC7C7"/>
+  <text x="230" y="121" font-size="13" fill="#E6EDF3">Python</text>
+  <text x="376" y="121" text-anchor="end" font-size="12.5" font-weight="600" fill="#E6EDF3">0.7%</text>
+  <circle cx="217" cy="143" r="5" fill="#DB61A2"/>
+  <text x="230" y="148" font-size="13" fill="#E6EDF3">Shell</text>
+  <text x="376" y="148" text-anchor="end" font-size="12.5" font-weight="600" fill="#E6EDF3">&lt;0.1%</text>
+  </g>
+</svg>
+
+</svg>

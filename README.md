@@ -1,3 +1,8 @@
+<p align="right">
+  <a href="README.md" lang="en"><img src="assets/languages/en-active.svg" width="88" height="28" alt="English" /></a>
+  <a href="README.vi.md" lang="vi"><img src="assets/languages/vi.svg" width="108" height="28" alt="Tiếng Việt" /></a>
+</p>
+
 <p align="center">
   <img src="Banner/Hoang%E2%80%99s%20Cozy%20Code%20Caf%C3%A9.png" width="100%" alt="Hoang’s Cozy Code Café — coding, coffee, and cats" />
 </p>

@@ -16,7 +16,6 @@ const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&l
 const W = 400, H = 200;
 const SANS = "'Segoe UI', 'Helvetica Neue', Arial, sans-serif";
 const C = {
-  border: '#303D4B',
   text: '#E6EDF3', sub: '#B1BAC4', muted: '#9198A1', accent: '#58A6FF',
   track: '#21262D', ring: '#58A6FF',
 };
@@ -142,7 +141,6 @@ function rank(d) {
 function card(title, body, aria) {
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(aria)}">
-  <rect x="0.75" y="0.75" width="${W - 1.5}" height="${H - 1.5}" rx="13.25" fill="none" stroke="${C.border}" stroke-width="1.5"/>
   <g font-family="${SANS}">
   <text x="24" y="38" font-size="17" font-weight="700" fill="${C.accent}">${esc(title)}</text>
   ${body.join('\n  ')}

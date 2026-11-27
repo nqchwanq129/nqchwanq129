@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="200" viewBox="0 0 400 200" role="img" aria-label="Most used languages">
-  <rect x="0.75" y="0.75" width="398.5" height="198.5" rx="13.25" fill="none" stroke="#303D4B" stroke-width="1.5"/>
   <g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
   <text x="24" y="38" font-size="17" font-weight="700" fill="#58A6FF">Most used languages</text>
   <clipPath id="bar"><rect x="24" y="54" width="352" height="10" rx="5"/></clipPath>

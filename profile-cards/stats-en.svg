@@ -7,7 +7,7 @@
   <text x="262" y="72" text-anchor="end" font-size="14" font-weight="700" fill="#E6EDF3">0</text>
   <circle cx="30" cy="93" r="3" fill="#58A6FF"/>
   <text x="42" y="98" font-size="14" fill="#B1BAC4">Commits (past year)</text>
-  <text x="262" y="98" text-anchor="end" font-size="14" font-weight="700" fill="#E6EDF3">256</text>
+  <text x="262" y="98" text-anchor="end" font-size="14" font-weight="700" fill="#E6EDF3">257</text>
   <circle cx="30" cy="119" r="3" fill="#58A6FF"/>
   <text x="42" y="124" font-size="14" fill="#B1BAC4">Pull requests</text>
   <text x="262" y="124" text-anchor="end" font-size="14" font-weight="700" fill="#E6EDF3">0</text>

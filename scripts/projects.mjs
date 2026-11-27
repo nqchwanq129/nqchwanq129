@@ -64,21 +64,8 @@ const projects = [
   },
 ];
 
-const vietnamese = {
-  profile: {
-    label: 'HỒ SƠ CÁ NHÂN',
-    description: ['Không gian GitHub với cà phê và những', 'ý tưởng mới. Minh họa SVG cùng biểu đồ', 'hoạt động được cập nhật tự động.'],
-  },
-  orbcomm: {
-    label: 'ỨNG DỤNG WEB',
-    description: ['Theo dõi vị trí thiết bị, xem lại hành trình', 'và gửi lệnh từ một bảng điều khiển.', 'Tích hợp bản đồ và dữ liệu ORBCOMM.'],
-  },
-};
-
-for (const lang of ['en', 'vi']) {
-for (const original of projects) {
-  const project = lang === 'vi' ? { ...original, ...vietnamese[original.file] } : original;
-  const sourceLabel = lang === 'vi' ? 'Mã nguồn ↗' : 'Source Code ↗';
+for (const project of projects) {
+  const sourceLabel = 'Source Code ↗';
   const lines = project.description.map((text, i) => `<text x="24" y="${225 + i * 19}" class="muted" font-size="13.5">${escape(text)}</text>`).join('\n');
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="460" height="354" viewBox="0 0 460 354" role="img" aria-labelledby="title description">
   <title id="title">${escape(project.title)}</title>
@@ -103,8 +90,7 @@ for (const original of projects) {
     <text x="436" y="340" text-anchor="end" fill="${project.accent}" font-size="11" font-weight="600">${sourceLabel}</text>
   </g>
 </svg>\n`;
-  const filename = `${project.file}${lang === 'vi' ? '-vi' : ''}.svg`;
+  const filename = `${project.file}.svg`;
   writeFileSync(join(destination, filename), svg);
   console.log(`Generated ${filename}`);
-}
 }

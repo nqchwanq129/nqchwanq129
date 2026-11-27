@@ -13,36 +13,25 @@
 ## 🛠️ Tech Stack
 
 <p align="left">
-  <!-- Ngôn ngữ lập trình và Styling -->
   <img src="assets/skill-icons/html5.svg" width="48" height="48" title="HTML5" alt="HTML5" />
   <img src="assets/skill-icons/css3.svg" width="48" height="48" title="CSS3" alt="CSS3" />
   <img src="assets/skill-icons/scss.svg" width="48" height="48" title="SCSS" alt="SCSS" />
   <img src="assets/skill-icons/typescript.svg" width="48" height="48" title="TypeScript" alt="TypeScript" />
   <img src="assets/skill-icons/python.svg" width="48" height="48" title="Python" alt="Python" />
   <img src="assets/skill-icons/csharp.svg" width="48" height="48" title="C#" alt="C#" />
-
-  <!-- Framework và Runtime -->
   <img src="assets/skill-icons/nextjs.svg" width="48" height="48" title="Next.js" alt="Next.js" />
   <img src="assets/skill-icons/nestjs.svg" width="48" height="48" title="NestJS" alt="NestJS" />
   <img src="assets/skill-icons/reactjs.svg" width="48" height="48" title="React.js" alt="React.js" />
   <img src="assets/skill-icons/nodejs.svg" width="48" height="48" title="Node.js" alt="Node.js" />
-
-  <!-- Cơ sở dữ liệu -->
   <img src="assets/skill-icons/mysql.svg" width="48" height="48" title="MySQL" alt="MySQL" />
   <img src="assets/skill-icons/sqlserver.svg" width="48" height="48" title="SQL Server" alt="SQL Server" />
-
-  <!-- Hệ điều hành -->
   <img src="assets/skill-icons/ubuntu.svg" width="48" height="48" title="Ubuntu" alt="Ubuntu" />
   <img src="assets/skill-icons/linux.svg" width="48" height="48" title="Linux" alt="Linux" />
   <img src="assets/skill-icons/windowsserver.svg" width="48" height="48" title="Windows Server" alt="Windows Server" />
-
-  <!-- Hạ tầng và máy chủ -->
   <img src="assets/skill-icons/vmware.svg" width="48" height="48" title="VMware" alt="VMware" />
   <img src="assets/skill-icons/nginx.svg" width="48" height="48" title="NGINX" alt="NGINX" />
   <img src="assets/skill-icons/iis.svg" width="48" height="48" title="IIS" alt="IIS" />
   <img src="assets/skill-icons/veeam.svg" width="48" height="48" title="Veeam" alt="Veeam" />
-
-  <!-- Công cụ phát triển -->
   <img src="assets/skill-icons/vscode.svg" width="48" height="48" title="VS Code" alt="VS Code" />
   <img src="assets/skill-icons/git.svg" width="48" height="48" title="Git" alt="Git" />
   <img src="assets/skill-icons/github.svg" width="48" height="48" title="GitHub" alt="GitHub" />

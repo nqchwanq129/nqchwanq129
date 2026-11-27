@@ -1,4 +1,4 @@
-// Coffee-themed Stats + Top languages cards for the profile README (English + Vietnamese).
+// Transparent GitHub-themed Stats + Top languages cards (English + Vietnamese).
 // Usage: node scripts/cards.mjs <outDir> [--demo]
 // Needs GITHUB_TOKEN and GH_USER (set by the workflow). --demo draws random data for a local preview.
 // Everything is drawn here from the GitHub API: no third-party card service.
@@ -16,13 +16,13 @@ const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&l
 const W = 400, H = 200;
 const SANS = "'Segoe UI', 'Helvetica Neue', Arial, sans-serif";
 const C = {
-  bgA: '#2E1E14', bgB: '#1C120B', border: '#6F4E37',
-  text: '#F5E6D3', sub: '#D7B899', muted: '#9C7A5E', accent: '#E6A15C',
-  track: '#4B2E1E', ring: '#C08552',
+  border: '#303D4B',
+  text: '#E6EDF3', sub: '#B1BAC4', muted: '#9198A1', accent: '#58A6FF',
+  track: '#21262D', ring: '#58A6FF',
 };
 // Nhóm màu tương phản cao (xanh lá, lam, tím, vàng, đỏ, teal...) để dễ phân biệt trên nền tối.
 // Phần tử cuối dùng cho "Other".
-const LANG_COLORS = ['#F2C14E', '#57C785', '#4FA3E3', '#A78BFA', '#E8695E', '#3FC7C7', '#E6A15C', '#8C8378'];
+const LANG_COLORS = ['#F2C14E', '#57C785', '#4FA3E3', '#A78BFA', '#E8695E', '#3FC7C7', '#DB61A2', '#8B949E'];
 
 const T = {
   en: {
@@ -142,16 +142,6 @@ function rank(d) {
 function card(title, body, aria) {
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(aria)}">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="${C.bgA}"/>
-      <stop offset="1" stop-color="${C.bgB}"/>
-    </linearGradient>
-    <clipPath id="card"><rect width="${W}" height="${H}" rx="14"/></clipPath>
-  </defs>
-  <g clip-path="url(#card)">
-    <rect width="${W}" height="${H}" fill="url(#bg)"/>
-  </g>
   <rect x="0.75" y="0.75" width="${W - 1.5}" height="${H - 1.5}" rx="13.25" fill="none" stroke="${C.border}" stroke-width="1.5"/>
   <g font-family="${SANS}">
   <text x="24" y="38" font-size="17" font-weight="700" fill="${C.accent}">${esc(title)}</text>

@@ -4,32 +4,32 @@
   <text x="24" y="38" font-size="17" font-weight="700" fill="#E9D7BB">Ngôn ngữ dùng nhiều nhất</text>
   <clipPath id="bar"><rect x="24" y="54" width="352" height="10" rx="5"/></clipPath>
   <g clip-path="url(#bar)"><rect x="24" y="54" width="352" height="10" fill="#21262D"/>
-  <rect x="24.00" y="54" width="140.36" height="10" fill="#F2C14E"/>
-  <rect x="164.36" y="54" width="105.65" height="10" fill="#57C785"/>
-  <rect x="270.01" y="54" width="68.21" height="10" fill="#4FA3E3"/>
-  <rect x="338.22" y="54" width="25.25" height="10" fill="#A78BFA"/>
-  <rect x="363.47" y="54" width="9.73" height="10" fill="#E8695E"/>
-  <rect x="373.20" y="54" width="2.50" height="10" fill="#3FC7C7"/>
+  <rect x="24.00" y="54" width="138.78" height="10" fill="#F2C14E"/>
+  <rect x="162.78" y="54" width="104.93" height="10" fill="#57C785"/>
+  <rect x="267.72" y="54" width="67.44" height="10" fill="#4FA3E3"/>
+  <rect x="335.16" y="54" width="24.96" height="10" fill="#A78BFA"/>
+  <rect x="360.12" y="54" width="9.62" height="10" fill="#E8695E"/>
+  <rect x="369.74" y="54" width="5.96" height="10" fill="#3FC7C7"/>
   <rect x="375.70" y="54" width="0.30" height="10" fill="#DB61A2"/>
   </g>
   <circle cx="29" cy="89" r="5" fill="#F2C14E"/>
   <text x="42" y="94" font-size="13" fill="#E6EDF3">TypeScript</text>
-  <text x="188" y="94" text-anchor="end" font-size="12.5" font-weight="600" fill="#E6EDF3">39.9%</text>
+  <text x="188" y="94" text-anchor="end" font-size="12.5" font-weight="600" fill="#E6EDF3">39.4%</text>
   <circle cx="29" cy="116" r="5" fill="#57C785"/>
   <text x="42" y="121" font-size="13" fill="#E6EDF3">JavaScript</text>
-  <text x="188" y="121" text-anchor="end" font-size="12.5" font-weight="600" fill="#E6EDF3">30.0%</text>
+  <text x="188" y="121" text-anchor="end" font-size="12.5" font-weight="600" fill="#E6EDF3">29.8%</text>
   <circle cx="29" cy="143" r="5" fill="#4FA3E3"/>
   <text x="42" y="148" font-size="13" fill="#E6EDF3">CSS</text>
-  <text x="188" y="148" text-anchor="end" font-size="12.5" font-weight="600" fill="#E6EDF3">19.4%</text>
+  <text x="188" y="148" text-anchor="end" font-size="12.5" font-weight="600" fill="#E6EDF3">19.2%</text>
   <circle cx="29" cy="170" r="5" fill="#A78BFA"/>
   <text x="42" y="175" font-size="13" fill="#E6EDF3">C#</text>
-  <text x="188" y="175" text-anchor="end" font-size="12.5" font-weight="600" fill="#E6EDF3">7.2%</text>
+  <text x="188" y="175" text-anchor="end" font-size="12.5" font-weight="600" fill="#E6EDF3">7.1%</text>
   <circle cx="217" cy="89" r="5" fill="#E8695E"/>
   <text x="230" y="94" font-size="13" fill="#E6EDF3">HTML</text>
-  <text x="376" y="94" text-anchor="end" font-size="12.5" font-weight="600" fill="#E6EDF3">2.8%</text>
+  <text x="376" y="94" text-anchor="end" font-size="12.5" font-weight="600" fill="#E6EDF3">2.7%</text>
   <circle cx="217" cy="116" r="5" fill="#3FC7C7"/>
   <text x="230" y="121" font-size="13" fill="#E6EDF3">Python</text>
-  <text x="376" y="121" text-anchor="end" font-size="12.5" font-weight="600" fill="#E6EDF3">0.7%</text>
+  <text x="376" y="121" text-anchor="end" font-size="12.5" font-weight="600" fill="#E6EDF3">1.7%</text>
   <circle cx="217" cy="143" r="5" fill="#DB61A2"/>
   <text x="230" y="148" font-size="13" fill="#E6EDF3">Shell</text>
   <text x="376" y="148" text-anchor="end" font-size="12.5" font-weight="600" fill="#E6EDF3">&lt;0.1%</text>
